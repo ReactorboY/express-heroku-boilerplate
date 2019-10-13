@@ -1,14 +1,19 @@
 import React from 'react';
+import {BrowserRouter as Router,Route} from 'react-router-dom'
 import PageWrapper from './components/PageWrapper'
+
+// Pages Component
 import Home from './components/pages/Home'
+import About from './components/pages/About'
 
 function App() {
   return (
-    <div>
-      <PageWrapper>
-        <Home />
-      </PageWrapper>
-    </div>
+        <Router>
+          <PageWrapper>
+            <Route exact path="/" component={Home}/>
+            <Route path="/about" component={About} />
+          </PageWrapper>
+        </Router>
   );
 }
 
