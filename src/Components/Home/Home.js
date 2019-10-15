@@ -4,6 +4,7 @@ import Header from '../Common/Header'
 import About from '../Common/About'
 import Service from '../Common/Service'
 import Project from '../Common/Project'
+import Footer from '../Common/Footer'
 
 class Home extends Component {
     render() {
@@ -17,6 +18,7 @@ class Home extends Component {
                 <About title="A Full Stack Developer" description="Hey, I'm Mohd Hussain, A full stack developer, Gamer and Problem Solver" />
                 <Service />
                 <Project />
+                <Footer />
             </React.Fragment>
         )
     }
