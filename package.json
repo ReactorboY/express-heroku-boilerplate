@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
@@ -10,6 +11,7 @@
     "react-router-hash-link": "^1.2.2",
     "react-scripts": "3.2.0"
   },
+  "homepage": "https://reactorboy.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
