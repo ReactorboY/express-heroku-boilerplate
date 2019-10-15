@@ -19,13 +19,13 @@ class Nav extends Component {
     render() {
         return (
             <React.Fragment>    
-            <Link className={this.state.toggled ? 'menu-toggle rounded active': 'menu-toggle rounded'} onClick={this.toggleMenu} to="\#">
+            <Link className={this.state.toggled ? 'menu-toggle rounded active': 'menu-toggle rounded'} onClick={this.toggleMenu} to="/#">
                 <i className={this.state.toggled ? 'fas fa-times' : 'fas fa-bars'}></i>
             </Link>
             <nav id="sidebar-wrapper" className={this.state.toggled ? 'active': ''}>
                 <ul className="sidebar-nav">
                 <li className="sidebar-brand">
-                    <Link className="js-scroll-trigger" to="#page-top">Start Bootstrap</Link>
+                    <Link className="js-scroll-trigger" to="#page-top">ReactorboY</Link>
                 </li>
                 <li className="sidebar-nav-item">
                     <Link className="js-scroll-trigger" to="#page-top">Home</Link>

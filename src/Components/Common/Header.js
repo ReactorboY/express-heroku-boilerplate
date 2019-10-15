@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {HashLink as Link} from 'react-router-hash-link'
 
 class Header extends Component {
     render() {
@@ -6,11 +7,11 @@ class Header extends Component {
             <React.Fragment>
                 <header className="masthead d-flex">
                     <div className="container text-center my-auto">
-                    <h1 className="mb-1">Stylish Portfolio</h1>
+                    <h1 className="mb-1">{this.props.title}</h1>
                     <h3 className="mb-5">
-                        <em>A Free Bootstrap Theme by Start Bootstrap</em>
+                        <em>{this.props.subtitle}</em>
                     </h3>
-                    <a className="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+                    <Link className="btn btn-primary btn-xl js-scroll-trigger" smooth to="#about">Find Out More</Link>
                     </div>
                     <div className="overlay"></div>
                 </header>

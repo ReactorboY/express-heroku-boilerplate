@@ -8,7 +8,6 @@ class App extends Component {
   render(){
   return (
         <Router>
-          
           <Route exact to="/" component={Home} />
         </Router>
     )
