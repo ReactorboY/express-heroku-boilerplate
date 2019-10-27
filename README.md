@@ -28,7 +28,7 @@ Something to be added
     npm install
 
     ```
-    **NOTE: rm -rf .git is used to make this clone directory in your own directory to push your app to heroku**  
+    **NOTE: rm -rf .git is used to make this clone directory, to initialise as your own directory to push your app to heroku**  
 
 2. Run Heroku cli command
     ```
