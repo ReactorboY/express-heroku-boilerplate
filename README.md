@@ -20,11 +20,13 @@ New to Heroku and Express and want to deploy your first app to Heroku, use this 
     git init
     git add .
     git commit -m "first app"
-    git remote add origin git@github.com/{USERSNAME}/{REPO_NAME}
+    git remote add origin git@github.com:YOUR_USERSNAME/YOUR_REPO_NAME
     git push origin master
     npm install
 
     ```
+    **NOTE: rm -rf .git is used to make this clone directory in your own directory to push your app to heroku**  
+    
 2. Run Heroku cli command
     ```
     heroku login
