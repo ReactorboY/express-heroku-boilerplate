@@ -10,6 +10,9 @@ New to Heroku and Express and want to deploy your first app to Heroku, use this 
 3. Text Editor (VSCode Preferred)
 4. Heroku account & Heroku CLI
 
+## Features
+Something to be added
+
 ## How To Use
 1. run this command where you want to add your app in your directory using git bash
     ```
