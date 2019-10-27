@@ -14,7 +14,7 @@ New to Heroku and Express and want to deploy your first app to Heroku, use this 
 Something to be added
 
 ## How To Use
-1. run this command where you want to add your app in your directory using git bash
+1. Run this command where you want to add your app in your directory using git bash
     ```
     
     git clone git@github.com:ReactorboY/express-heroku-boilerplate.git  
