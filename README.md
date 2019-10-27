@@ -26,7 +26,7 @@ New to Heroku and Express and want to deploy your first app to Heroku, use this 
 
     ```
     **NOTE: rm -rf .git is used to make this clone directory in your own directory to push your app to heroku**  
-    
+
 2. Run Heroku cli command
     ```
     heroku login
@@ -35,3 +35,5 @@ New to Heroku and Express and want to deploy your first app to Heroku, use this 
     git commit -m "heroku"
     git push origin master && git push heroku master
     ```
+
+3. if you want to use the environment variable in root directory called *.env*
