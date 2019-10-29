@@ -7,8 +7,7 @@ What's the use of creating an application when you can't showcase it to world & 
 1. Easy to Use
 2. Deploy on the Go
 3. Focus on API creation not on deploying & debugging on your app on server
-
-New to Heroku and Express and want to deploy your first app to Heroku, use this boilerplate for quickstart
+4. Provides Test for your API using mocha & chai library
 
 ## Things Needed
 1. Git bash
@@ -42,5 +41,5 @@ New to Heroku and Express and want to deploy your first app to Heroku, use this 
     git push origin master && git push heroku master
     ```
 
-3. if you want to use the environment variable in root directory called *.env*
-4. Coming Soon
+3. if you want to use the environment variable,create a *.env* in your root directory  
+   **NOTE:For use in heroku set your config varibales in setting under your dashboard**
