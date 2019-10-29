@@ -1,6 +1,12 @@
 # Express Heroku Boilerplate
 
-A Easy to use, precise and upto-date Boilerplate for deploying your express app to heroku  
+What's the use of creating an application when you can't showcase it to world & and make it accessible by internet.
+
+## Features
+
+1. Easy to Use
+2. Deploy on the Go
+3. Focus on API creation not on deploying & debugging on your app on server
 
 New to Heroku and Express and want to deploy your first app to Heroku, use this boilerplate for quickstart
 
@@ -9,9 +15,6 @@ New to Heroku and Express and want to deploy your first app to Heroku, use this 
 2. Nodejs
 3. Text Editor (VSCode Preferred)
 4. Heroku account & Heroku CLI
-
-## Features
-Something to be added
 
 ## How To Use
 1. Run this command where you want to add your app in your directory using **git bash**
