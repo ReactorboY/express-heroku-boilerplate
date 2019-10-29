@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/ReactorboY/express-heroku-boilerplate.svg?branch=master)](https://travis-ci.com/ReactorboY/express-heroku-boilerplate)
+
 # Express Heroku Boilerplate
 
 What's the use of creating an application when you can't showcase it to world & and make it accessible by internet.
