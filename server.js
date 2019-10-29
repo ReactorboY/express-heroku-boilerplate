@@ -9,6 +9,10 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const morgan = require('morgan')
 
+// custom module imports
+const userRoutes = require('./src/routes/user.routes')
+const postRoutes = require('./src/routes/post.routes')
+
 // create express instance
 const app = express()
 
@@ -28,10 +32,9 @@ app.use(morgan('dev'))
 // use cors for cross origin accessing
 app.use(cors())
 
-app.use((req,res,next) => {
-    console.log('Express is working')
-    next()
-})
+// routes fo post and user
+app.use('/user', userRoutes)
+app.use('/post', postRoutes)
 
 app.get('/',(req,res) => {
     res.send('Main URL Accessed')
@@ -40,4 +43,8 @@ app.get('/',(req,res) => {
 // listen to port
 app.listen(PORT,() => {
     console.log(`Server is running at port ${PORT}`);
+    mongoose.connect(process.env.DB_CONNECTION,{
+        useNewUrlParser:true,
+        useUnifiedTopology:true
+    }).then(() =>  console.log('Connected to mongodb')).catch(err =>  console.log(err))
 })
