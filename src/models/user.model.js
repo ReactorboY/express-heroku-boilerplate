@@ -2,10 +2,10 @@ const mongoose = require('mongoose')
 
 const userSchema = mongoose.Schema({
     name: String,
-    posts: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Post'
-    }]
+    createdAt: {
+        type:Date,
+        default: Date.now
+    }
 })
 
 module.exports = mongoose.model('User', userSchema, 'User')

@@ -10,8 +10,8 @@ const mongoose = require('mongoose')
 const morgan = require('morgan')
 
 // custom module imports
+const startDatabase = require('./src/db')
 const userRoutes = require('./src/routes/user.routes')
-const postRoutes = require('./src/routes/post.routes')
 
 // create express instance
 const app = express()
@@ -34,7 +34,6 @@ app.use(cors())
 
 // routes fo post and user
 app.use('/user', userRoutes)
-app.use('/post', postRoutes)
 
 app.get('/',(req,res) => {
     res.send('Main URL Accessed')
@@ -42,9 +41,6 @@ app.get('/',(req,res) => {
 
 // listen to port
 app.listen(PORT,() => {
-    console.log(`Server is running at port ${PORT}`);
-    mongoose.connect(process.env.DB_CONNECTION,{
-        useNewUrlParser:true,
-        useUnifiedTopology:true
-    }).then(() =>  console.log('Connected to mongodb')).catch(err =>  console.log(err))
+    console.log(`Server is running at port ${PORT}`)
+    startDatabase()
 })
