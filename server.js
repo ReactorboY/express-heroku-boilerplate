@@ -44,3 +44,5 @@ app.listen(PORT,() => {
     console.log(`Server is running at port ${PORT}`)
     startDatabase()
 })
+
+module.exports = app

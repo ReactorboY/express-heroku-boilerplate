@@ -46,3 +46,5 @@ What's the use of creating an application when you can't showcase it to world & 
 
    if you want to use the environment variable,create a *.env* in your root directory  
    **NOTE:For use in heroku set your config varibales in setting under your dashboard**
+
+   _feel free to contribute and post issue, or want to work together,then contact me_
