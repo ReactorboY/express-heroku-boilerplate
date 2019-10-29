@@ -31,8 +31,11 @@ What's the use of creating an application when you can't showcase it to world & 
 
     ```
     **NOTE: rm -rf .git is used to make this clone directory, to initialise as your own directory to push your app to heroku**  
-
-2. Run Heroku cli command
+2. To run simply type these command in your cmd 
+    ```
+    npm run server
+    ```
+3. To deploy your app to heroku
     ```
     heroku login
     heroku create your-app-name
@@ -41,5 +44,5 @@ What's the use of creating an application when you can't showcase it to world & 
     git push origin master && git push heroku master
     ```
 
-3. if you want to use the environment variable,create a *.env* in your root directory  
+   if you want to use the environment variable,create a *.env* in your root directory  
    **NOTE:For use in heroku set your config varibales in setting under your dashboard**
